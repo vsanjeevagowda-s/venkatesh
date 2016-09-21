@@ -1,0 +1,241 @@
+.CoffeeShop{
+	font-size: 40px;
+	padding: 2px;
+	font-variant: small-caps;
+	font-weight: bolder;
+}
+
+footer{
+	text-align: center;
+	
+}
+
+
+/*******************************************BODY*********************************/
+ #homePage q{
+	position: absolute;
+	top: 70%;
+	left: 20px;
+	font-size: 35px;
+	width: 100%;
+	font-variant: small-caps;
+	font-weight: bolder;
+}
+
+#homePage q:hover{
+	position: absolute;
+	top: 70%;
+	left: 20px;
+	font-size: 35px;
+	width: 100%;
+	background-color: white;
+	font-variant: small-caps;
+}
+
+.myImage{
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 0.3;
+}
+
+
+
+.navbar{
+	margin-bottom: 3px;
+}
+.footer{
+	margin-bottom: 0px;
+
+}
+
+#aboutPage {
+	display: none;
+	background-image: url("images/aboutback1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	
+}
+#abouttitle{
+	color: black;
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 60px;
+	font-variant: small-caps;
+	font-style: italic;
+
+
+}
+
+.abouttext{
+	color: black;
+	height: 720px;
+	font-size: 30px;
+	padding: 10px
+}
+.abouttext:hover{
+background-color: brown;
+
+}
+marquee{
+	color: brown;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+
+/*****************************************coffee**********************************************************/
+#coffeePage img{
+	width: 280px;
+	height: 280px;
+	border-radius: 15px;
+}
+
+#coffeePage img:hover{
+	width: 380px;
+	height: 350px;
+}
+
+#coffeePage h1{
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	background-color: white;
+
+}
+
+#coffeePage{
+	background-image: url("images/gif.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: none;
+}
+.coffeeDetails{
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+}
+
+.coffeeDetails:hover{
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+	background-color: brown;
+}
+
+ .coffeeTitle{
+ 	color: yellow;
+ 	font-size: 30px;
+ 	
+}
+
+/****************************************coffee********************************************************************/
+@media screen and (max-width: 768px){
+	.CoffeeShop{
+		font-size: 30px;
+	}
+	
+	#homePage q{
+		left: 0;
+		top: 60%;
+		font-size: 15px;
+	
+	}
+	.myImage{
+	height: 400px;
+	width: 5000px;
+	}
+
+	.copy{
+		font-size: 9px;
+	}
+	.address{
+		font-size: 10px;
+	}
+	.abouttext{
+	color: black;
+	font-size: 15px;
+	padding: 10px
+}
+	marquee{
+		font-size: 12px;
+	}
+	.coffeeDetails{
+		font-size: 12px;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+#homePage q{
+		left: 0;
+		top: 30%;
+		font-size: 20px;
+		font-variant: small-caps;
+	
+	}
+	.myImage{
+	height: 400px;
+	width: 5000px;
+	}
+
+}
+
+/**********************************************SNACKS**************************************************************/
+#snacksPage{
+	display: none;
+	background-image: url("snacks/back1.jpg");
+}
+#snacksPage img{
+	width: 300px;
+	height: 270px;
+	
+	border:2px solid black;
+	border-radius: 15px;
+	
+}
+
+#snacksPage h1{
+	text-align: center;
+}
+
+.snackDetails{
+	position: absolute;
+	top: 30px;
+	width: 280px;
+	height: 270px;
+	padding-left: 5px;
+	text-align: justify;
+	font-weight: bolder;
+	font-size: 15px;
+	
+
+}
+
+.snacksTitle{
+	font-weight: bolder;
+	text-align: left;
+	font-size: 16px;
+	
+	margin-left: -50px;
+	text-align: center;
+	
+}
+/**********************************************SNACKS**************************************************************/
+/**********************************************contacts**************************************************************/
+
+#contactPage{
+	display: none;
+}
+#contactPage img{
+	width: 100%;
+	height: 180px;
+}
+#success{
+	display: none;
+}
+
+/**********************************************contacts**************************************************************/

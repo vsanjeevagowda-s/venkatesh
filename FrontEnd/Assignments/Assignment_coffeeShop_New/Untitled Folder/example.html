@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home House</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 col-xs-12" id="imgdiv1">
+				<img id="img1" src="images/home/a.jpg" width="300px" height="300px"><p></p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12" id="imgdiv2">
+				<img id="img2" src="images/home/a.jpg" width="300px" height="300px"><p></p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12" id="imgdiv3">
+				<img id="img3" src="images/home/a.jpg" width="300px" height="300px"><p></p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12" id="imgdiv4">
+				<img id="img4" src="images/home/a.jpg" width="300px" height="300px"><p></p>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12" id="imgdiv4">
+				<img id="img3" src="images/home/a.jpg" width="300px" height="300px"><p></p>
+			</div>
+			
+			
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+	
+		$('#imgdiv1').mouseenter(function(){
+			$('#imgdiv1').find('#img1').css('opacity','0.2');
+			$('#imgdiv1').find('p').html('<p  style=" position:absolute; top:10px;  width:200px; height:200px;">This hugely popular coffee drink has become a staple that even the most common of corner coffee shops carries (or at least a version of it). A true cappuccino is a combination of equal parts espresso, steamed milk and milk froth. This luxurious drink, if made properly, can double as a dessert with its complex flavors and richness.</p>');
+		});
+
+		$('#imgdiv1').mouseleave(function(){
+			$('#imgdiv1').find('#img1').css('opacity','1');
+			$('#imgdiv1').find('p').html(' ');
+						
+		});
+
+
+
+
+
+		$('#imgdiv2').mouseenter(function(){
+			$('#imgdiv2').find('#img2').css('opacity','0.2');
+			$('#imgdiv2').find('p').html('<p style=" position:absolute; top:10px;  width:200px; height:200px;">This hugely popular coffee drink has become a staple that even the most common of corner coffee shops carries (or at least a version of it). A true cappuccino is a combination of equal parts espresso, steamed milk and milk froth. This luxurious drink, if made properly, can double as a dessert with its complex flavors and richness.</p>');
+		});
+
+		$('#imgdiv2').mouseleave(function(){
+			$('#imgdiv2').find('#img2').css('opacity','1');
+			$('#imgdiv2').find('p').html(' ');
+						
+		});
+
+
+
+
+		$('#imgdiv3').mouseenter(function(){
+			$('#imgdiv3').find('#img3').css('opacity','0.2');
+			$('#imgdiv3').find('p').html('<p  style=" position:absolute; top:10px;  width:200px; height:200px;">This hugely popular coffee drink has become a staple that even the most common of corner coffee shops carries (or at least a version of it). A true cappuccino is a combination of equal parts espresso, steamed milk and milk froth. This luxurious drink, if made properly, can double as a dessert with its complex flavors and richness.</p>');
+		});
+
+		$('#imgdiv3').mouseleave(function(){
+			$('#imgdiv3').find('#img3').css('opacity','1');
+			$('#imgdiv3').find('p').html(' ');
+						
+		});
+
+
+
+		$('#imgdiv4').mouseenter(function(){
+			$('#imgdiv4').find('#img4').css('opacity','0.2');
+			$('#imgdiv4').find('p').html('<p id="replaceText1" style=" position:absolute; top:10px;  width:200px; height:200px;">This hugely popular coffee drink has become a staple that even the most common of corner coffee shops carries (or at least a version of it). A true cappuccino is a combination of equal parts espresso, steamed milk and milk froth. This luxurious drink, if made properly, can double as a dessert with its complex flavors and richness.</p>');
+		});
+
+		$('#imgdiv4').mouseleave(function(){
+			$('#imgdiv4').find('#img4').css('opacity','1');
+			$('#imgdiv4').find('p').html(' ');
+						
+		});
+
+
+
+
+	</script>
+
+</body>
+</html>
