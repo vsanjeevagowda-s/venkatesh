@@ -104,3 +104,21 @@ nav{
 	padding: 10px;
 }
 
+.join{
+	float: left;
+	background-color: red;
+	padding: 3px;
+	color: white;
+	position: absolute;
+}
+
+.count{
+	
+	float: right;
+	
+	
+	background-color: grey;
+	color: white;
+	padding:1px;
+}
+

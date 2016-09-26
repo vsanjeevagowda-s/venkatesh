@@ -40,3 +40,45 @@ $('#btnSubmit').click(function(){
 	alert('Successfuly Submitted');
 })
 
+
+
+$('#b1_1').hide();
+$('#b2_1').hide();
+$('#b3_1').hide();
+$('#b1').mouseenter(function(){
+	$('#b1').hide();
+	$('#b1_1').show();
+})
+
+$('#b1_1').mouseleave(function(){
+		$('#b1').show();
+	$('#b1_1').hide();
+})
+
+
+
+$('#b2').mouseenter(function(){
+	$('#b2').hide();
+	$('#b2_1').show();
+})
+
+$('#b2_1').mouseleave(function(){
+		$('#b2').show();
+	$('#b2_1').hide();
+})
+
+
+
+$('#b3').mouseenter(function(){
+	$('#b3').hide();
+	$('#b3_1').show();
+})
+
+$('#b3_1').mouseleave(function(){
+		$('#b3').show();
+	$('#b3_1').hide();
+})
+
+$('#fileupload').click(function() {
+    $('#yourinputname').trigger('click');
+});
