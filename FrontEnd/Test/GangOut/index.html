@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GangOut</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar ">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#" id="menuhome"><img src="asets/gangout-logo.png"></a>
+			</div><br><br>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" id="menuAbout">About Us</a></li>
+				<li><a href="#" id="menuSignup">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--********************************About***************************************-->
+	<div class="container" id="aboutPage">
+		<div class="row middleCol">
+			<h1 class="about">About Us</h1>
+			<div class="col-md-8">
+				<p>Gangout is the world's largest network of local groups. Gangoutmakes it easy for anyone to
+					organize a local group or find one of the thousands already meeting up face-to-face. More
+					than 9,000 groups get together in local communities each day, each one with the goal of
+					improving themselves or their commu nities.</p>
+					<p>
+						Gangout's mission is to revitalize local community and help people around the world
+						self-organize. Meetup believes that people can change their personal world, or the whole
+						world, by organizing themselves into groups that are powerful enough to make a difference.</p><hr>
+					</div>
+					<div class="col-md-4">
+						<p class="UpEvent">Learn More</p>
+						<p>Gangout is Hiring!</p>
+						<p>Read the FAQ</p>
+						<p>Press inquiries</p>
+						<p>Get Help</p>
+					</div>
+					
+				</div>
+				<div class="row middleCol">
+					<div class="col-md-1">
+						<img src="asets/Anoop.png">
+					</div>
+					<div class="col-md-7"><p>Camille Alexander, Operations Manager</p>
+
+						Camille leads the Office Ops &amp; Admin teams ensuring everything runs
+						smoothly &amp; efficiently from H2T.<hr></div>
+						<div class="col-md-4"></div>
+					</div>
+
+					<div class="row middleCol">
+						<div class="col-md-1">
+							<img src="asets/joshi.png">
+						</div>
+						<div class="col-md-7"><p>Camille Alexander, Operations Manager</p>
+
+							Camille leads the Office Ops &amp; Admin teams ensuring everything runs
+							smoothly &amp;efficiently from H2T.<hr></div>
+							<div class="col-md-4"></div>
+						</div>
+
+						<div class="row middleCol">
+							<div class="col-md-1">
+								<img src="asets/kiran.png">
+							</div>
+							<div class="col-md-7"><p>Camille Alexander, Operations Manager</p>
+
+								Camille leads the Office Ops & Admin teams ensuring everything runs
+								smoothly & efficiently from H2T.<hr></div>
+								<div class="col-md-4"></div>
+							</div>
+						</div>
+						<!--********************************SignUp***************************************-->
+						<div class="container" id="signPage">
+							
+							
+							<div class="row middleCol">
+
+								<h1 class="about">Quick Sign Up</h1>
+								<div class="col-md-12 ">
+									<h2 >Hi there! It takes few minutes to sign up</h2>
+									<p>Its simple, a few click you can Gangout or know whats happening around you, and even you can setup your inerest groups.
+										A verification email will be sent to the address you specifiy. Your account will be active after verification successful. </p>
+									</div>
+								</div>
+								<div class="row middleCol">
+									<div class="col-md-6 pading" >
+										<form id="myForm">
+											<div class="form-group">
+												<input type="text" class="form-control "  placeholder="Your Name">
+												<a href="#"  class="glyphicon glyphicon-question-sign inline" title="Optional. Enter your first name followed by second name,
+												your group members can recognize you."></a>
+												
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control"  placeholder="Your Title">
+												<a href="#"  class="glyphicon glyphicon-question-sign inline"></a>
+											</div>
+											
+											<!--***********************File Upload*****************************-->
+											<div class="col-md-12 fileU"> 
+												<div id="fileUpload" class="col-md-10">
+													<p>Upload File Here</p>
+												</div>
+												<div id="uploadimg" class="col-md-2"><img  src="asets/icon-profile.png"><p>Reset</p>
+												</div>
+												<input type="file" id="File">
+												<input type="reset" id="Filer">
+											</div>
+											<!--***********************File Upload Ends*****************************-->
+											
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="User Name">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Phone ">
+												<a href="#"  class="glyphicon glyphicon-question-sign inline"></a>
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Email">
+												<a href="#" class="glyphicon glyphicon-question-sign inline"></a>
+											</div>
+											<div>
+												<p>By clicking Sign Up you accept our<br> terms and condition</p>
+											</div>
+											<button type="button" id="btnCancel">Cancel</button>
+											<button type="button" id="btnSubmit">Submit</button>
+										</form>
+									</div><!--class="col-md-6 "-->
+									
+									
+									<div class="col-md-6 ">
+										
+										
+									</div>
+								</div>
+
+							</div>
+
+							<!--********************************Home***************************************-->
+							<div id="homePage">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-md-12">
+											<div id="slide">
+												
+												<img src="slider/slider1.png" class="homeImg">
+												<img src="slider/slider2.png" class="homeImg">
+												<img src="slider/slider3.png" class="homeImg">
+
+												
+											</div><!--id="slide"-->
+										</div>
+									</div><!--class="row"-->
+									
+
+
+
+									<div class="row ">
+										<div class="col-md-1"></div>
+										<div class="col-md-10 middleCol">
+											<div class="row">
+												<div class="col-md-12">
+													<h1 class="UpEvent" >Upcoming Events</h1>
+												</div>
+											</div>
+											<div class="row"><!--meet ups blocks-->
+												<div class="col-md-4  ">
+
+													<!--**********************************************************************************************-->
+
+
+													<div class="col-md-12 thumbnail" id="b1">
+														<h4 >ios Workshop</h4>
+														<img src="asets/default-image.png" width="300" height="180px" >
+
+														<div class="col-md-10"><p class="UpEvent">PAST EVENT</p><p>Core Ruby work shop</p>
+															<img src="asets/icon-location.png"><span class="bang">BANGALORE</span>
+														</div>
+														<div class="col-md-2"><img src="asets/icon-calender.png">21 JUL</div>
+													</div>
+													<!--**********************************************************************************************-->
+													<div class="col-md-12 thumbnail" id="b1_1">
+
+														<h3 class="count">112</h3>
+														<h4 >Gmail Workshop</h4>
+														<h6 class="join"><a href="#"> JOIN</a></h6>
+														<img src="asets/default-image.png" width="300" height="180px" class="imgh">
+
+														<div class="col-md-10"><p class="UpEvent">PAST EVENT</p><p>Core Ruby work shop</p>
+															<img src="asets/icon-location.png"><span class="bang">BANGALORE</span>
+														</div>
+														<div class="col-md-2"><img src="asets/icon-calender.png">21 JUL</div>
+													</div>
+													<!--**********************************************************************************************-->
+
+												</div>
+
+												
+												<div class="col-md-4  ">
+
+													<!--**********************************************************************************************-->
+
+													<div class="col-md-12 thumbnail" id="b2">
+														<h4>Mysore Web Aps Engineering</h4>
+														<img src="asets/default-image.png" width="300" height="180px" >
+														<div class="col-md-10"><p class="UpEvent">PAST EVENT</p><p>Core Ruby work shop</p>
+															<img src="asets/icon-location.png"><span class="bang">BANGALORE</span>
+														</div>
+														<div class="col-md-2"><img src="asets/icon-calender.png">21 JUL</div>
+													</div>
+													<!--**********************************************************************************************-->
+													<div class="col-md-12 thumbnail" id="b2_1">
+														<h3 class="count">112</h3>
+														<h4>Mysore Web Aps Engineering</h4>
+														<h6 class="join"><a href="#">JOIN</a></h6>
+														<img src="asets/default-image.png" width="300" height="180px" class="imgh" >
+														<div class="col-md-10"><p class="UpEvent">PAST EVENT</p><p>Core Ruby work shop</p>
+															<img src="asets/icon-location.png"><span class="bang">BANGALORE</span>
+														</div>
+														<div class="col-md-2"><img src="asets/icon-calender.png">21 JUL</div>
+													</div>
+													<!--**********************************************************************************************-->
+
+												</div>
+												<div class="col-md-4  ">
+													<!--**********************************************************************************************-->
+
+													<div class="col-md-12 thumbnail" id="b3">
+														
+														<h4>Android Workshop</h4>
+														<img src="asets/default-image.png" width="300" height="180px" >
+														<div class="col-md-10"><p class="UpEvent">PAST EVENT</p><p>Core Ruby work shop</p>
+															<img src="asets/icon-location.png"><span class="bang">BANGALORE</span>
+														</div>
+														<div class="col-md-2"><img src="asets/icon-calender.png">21 JUL</div>
+													</div>
+													<!--**********************************************************************************************-->
+													<div class="col-md-12 thumbnail" id="b3_1">
+														<h3 class="count">112</h3>
+														<h4>Android Workshop</h4>
+														<h6 class="join"><a href="#">JOIN</a></h6>
+														<img src="asets/default-image.png" width="300" height="180px" class="imgh">
+														<div class="col-md-10"><p class="UpEvent">PAST EVENT</p><p>Core Ruby work shop</p>
+															<img src="asets/icon-location.png"><span class="bang">BANGALORE</span>
+														</div>
+														<div class="col-md-2"><img src="asets/icon-calender.png">21 JUL</div>
+													</div>
+													<!--**********************************************************************************************-->
+													
+
+												</div>
+											</div>
+											<div class="row"><!--meet ups defination-->
+												<div class="col-md-8">
+													<p>The New York Knowledge Engineering Meetup is a Meetup that aims to bring togetherthe
+														community of software professionals, researchers, and enthusiasts, interested in how topics
+														such as Artificial Intelligence, Knowledge Representation and Reasoning, Machine Learning,
+														and Natural Language Processing fit together in the engineering of intelligent software
+														system applications that acquire, exploit, or create knowledge.</p><p>
+														We seek to create a friendly yet stimulating environment for peopleto network and share
+														knowledge on this topics, through a platform of events and presentations. lfyou're interest-
+														ed in getting involved sign up and reach out.We look forward to connecting with you.</p><p>
+														The ISWC organizers have agreed to open up the posters and demo reception evening to NY
+														Semantic Web and Knowledge Engineering Meetup members.</p>
+													</div>
+													<div class="col-md-4">
+														<p>Date:</p>
+														<p class="UpEvent">21 July 2016 Monday</p>
+														<p>Venue:</p>
+														<p class="UpEvent">Qwinix Technologies</p><p>
+														Horizon, HIEMA Convention Center Road,<br>Hebbal Industrial Estate 5,<br> Mysuru, Karnataka 570016<br></p>
+														<p class="UpEvent">Attending</p>
+														<p>Kishan 9.<br>Daniel P.<br>
+															Chippy K.<br></p>
+
+														</div>
+													</div>
+
+
+												</div>
+												<div class="col-md-1"></div>
+											</div>
+
+
+										</div><!--class="container-fluid"-->
+									</div>
+									<!--******************************Footer*****************************************-->
+									<footer id="footer">
+										<div class="container-fluid">
+											<div class="row">
+
+												<div class="footerh" class="col-md-12">
+													<ul>
+														<li><a href=""> Home</a></li><span class="caret UpEvent"></span>
+														<li><a href="">About Us</a></li><span class="caret UpEvent"></span>
+														<li><a href="">Events</a></li><span class="caret UpEvent"></span>
+														<li><a href="">Communities</a></li><span class="caret UpEvent"></span>
+														<li><a href="">Blog</a></li><span class="caret UpEvent"></span>
+														<li><a href="">Terms</a></li><span class="caret UpEvent"></span>
+														<li><a href="">Privacy Policy</a></li><span class="caret UpEvent"></span>
+														<li><a href="">Contact Us</a></li><span class="caret UpEvent"></span>
+
+													</ul>
+												</div><!--id="footerh" class="col-md-12"-->
+											</div>
+											<div class="row">
+												<div class="col-md-12 footerh">
+													<img src="asets/gangout-logo-white.png">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 footerh">
+													<span>&copy;2016</span>
+												</div>
+												
+											</div>
+										</div>
+										
+									</footer>
+
+									<!--***********************************************************************-->
+
+
+									<script type="text/javascript" src="scripts.js"></script>
+								</body>
+								</html>
