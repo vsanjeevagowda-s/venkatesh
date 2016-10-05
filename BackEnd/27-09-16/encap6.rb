@@ -16,9 +16,9 @@ end
 
 class Child < Parent
 	def method_e
-		methos_d
+
 		puts "Child default method accessed to dispaly the Private and Protected"
-		
+				methos_d
 	end
 
 
@@ -32,5 +32,6 @@ class Child < Parent
 end
 
 
-child=Child.new
-child.method_e
+# child=Child.new
+# child.method_e
+
