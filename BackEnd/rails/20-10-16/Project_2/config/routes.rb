@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
+  root 'employee#index'
 
-     root "qwinix#index"
-
-    # resources :employes  
-     get '/employees' => "employees#new"
-    # get "qwinix/new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

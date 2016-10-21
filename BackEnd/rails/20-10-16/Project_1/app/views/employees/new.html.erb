@@ -1,0 +1,20 @@
+<h1> Add Employee</h1>
+<%= form_for  @employee, url: employee_path do |e| %>
+<p>
+<label> First Name: </label><br>
+	<%= e.text_field :firstname %>
+</p>
+
+<p>
+	<label> Last Name: </label><br>
+	<%= e.text_field :lastname %>
+</p>
+
+<p>
+	<label> Employee Id: </label><br>
+	<%= e.text_field :employee_code %>
+</p>
+
+<%= e.submit %>
+<% end %>
+
