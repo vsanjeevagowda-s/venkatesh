@@ -1,0 +1,386 @@
+
+
+
+
+
+
+		.img{
+			height: 380px;
+			border: 1px solid black;
+			border-radius: 6px;
+		}
+
+		.miltitext{
+			text-align: justify;;
+		}
+
+		.info{
+			width: 100%;
+		}
+		
+		
+		
+		/*nav bar*/
+		
+
+		.nav li>a{
+			
+			text-align: center;
+			padding-left: 85px;
+			padding-right: 87px;
+
+		}
+
+		.nav>li{
+			
+			border:1px solid #e0d6d6;
+
+
+		}
+
+		
+
+		.nav{
+			
+			width: 100%;
+
+		}
+
+		/*Pager*/
+
+		
+
+		.pager li>a{
+			border-radius: 5px;
+			margin: -2px;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0; 
+		}
+
+		.activepagination {
+			color: red;
+		}
+		
+		/*tag line*/
+	.tagline{
+			text-align: center;;
+			background-color: #222d0b;
+			margin-left: 20%;
+			margin-right: 20%;
+			font-variant: small-caps;
+			color: white;
+			border: 1px solid white;;;
+		}
+
+
+
+		/*animated search bar*/
+		.search {
+			float:right;
+			width: 130px;
+			
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			font-size: 16px;
+			background-color: white;
+			background-image: url('images/searchicon.png');
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			background-size: 30px 30px;
+			padding: 12px 20px 12px 40px;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+		}
+
+		.search:focus {
+			width: 100%;
+			border-color: aquamarine;
+			background-color: #f7f4f4;
+		}
+
+		/**wraptext  image**/
+		.wrapimg{
+			width: 20%;
+			float: left;
+			margin-left: 30px;
+			margin-top: 25px;
+			padding: 7px;
+		}
+
+
+		.wraptext{
+			text-align: justify;
+			margin-left: 30px;
+			margin-right: 30px;
+			margin-top: 20px;
+			
+		}
+
+
+		/*------------------------------------------------*/
+		.about-toppage{
+
+			float: right;
+			margin-right: 40px;
+
+
+
+		}
+
+		.about-toppage a{
+			padding-right: 10px;
+		}
+
+		.footer{
+			text-align: center;
+			
+			
+			width: 100%;
+			height: 105px;
+			position: relative;
+			background-color: black;
+			color: aliceblue;
+			
+			
+		}
+
+		/*******About Us Page*****/
+
+		.aboutustag{
+		
+			text-align: center;
+			
+			background-color: #222d0b;
+		
+			margin-left: 20%;
+		
+			margin-right: 20%;
+		
+			font-variant: small-caps;
+			
+			color: white;
+			
+			border: 1px solid white;
+		}
+
+
+		#aboutpage{
+			display: none;
+		}
+
+
+
+		.btn-block{
+			border-radius: 10px;
+		}
+
+
+
+		div#content {
+			position: relative;
+			top: -94px;;
+
+
+		}
+
+		p:hover{
+			border:1px solid black;
+			border-radius: 8px;
+			padding: 6px;
+		}
+
+		p{
+			padding: 6px;
+			border: 1px solid #eaeaea;
+			background-color: azure;
+			border-radius: 8px;;;
+		}
+
+
+
+		nav#top {
+			background-color: transparent;
+			border-color: transparent;
+
+
+		}
+
+
+
+
+
+		.heading h1{
+			display: inline-block;
+			padding-left: 5px;
+			font-family: 'Frijole', cursive;
+			font-size: 50px;
+			color: white;;;
+		}
+
+		body{
+			background-image: url('images/back.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.heading img{
+			height: 100px;
+			margin-top: -29px;
+			padding-left: 86px;
+		}
+
+		.head{
+			background-color: #691414;
+		}
+
+		.nav li a{
+			background-color: white;
+		}
+		
+		
+		.navbar-default .navbar-nav > li > a{
+			
+			/*font-size: 15px;*/
+			font-weight: bolder;
+		}
+
+
+
+		.navbar-default .navbar-nav > li > a:hover{
+			
+			color: white;
+			
+			background-color: black;;
+		}
+		.navbar-default .navbar-nav > li > a:focus{
+			
+			color: white;
+			
+			background-color: black;
+		}
+
+		.miltitext>h3{
+			text-align: center;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+
+
+		.socialdiv-footer .socialicon{
+			display: none;
+		}
+
+		.socialdiv .socialicon{
+			display: inline;
+			margin-top: 30px;
+			width: 8%;
+
+		}
+		.socialdiv .socialicon:hover{
+			display: inline;
+			margin-top: 30px;
+			width: 8%;
+			opacity: 0.7;
+		}
+
+		
+
+		.footernav li{
+			display: inline;
+			padding: 17px;
+		}
+
+		.pager li>a {
+
+		background-color: #d0adad;
+
+		}
+
+
+/**************************Mediaquery***********************************/
+		@media only screen and (max-width: 680px) { 
+			
+		.tagline{
+			text-align: center;
+			background-color: #222d0b;
+			margin-left: 8%;
+			margin-right: 8%;
+			font-variant: small-caps;
+			color: white;
+			border: 1px solid white;;;
+			font-size: 22px;
+		}
+
+		.search {
+			float:right;
+			width: 50px;
+			
+			border: 1px solid #ccc;
+			border-radius: 30px;
+			font-size: 10px;
+			background-color: white;
+			background-image: url('images/searchicon.png');
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			background-size: 20px 20px;
+			padding: 12px 20px 12px 40px;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
+		}
+
+
+		.heading img{
+			height: 70px;
+			margin-top: -10px;
+			padding-left: 0px;
+		}
+
+		.heading h1{
+			display: inline-block;
+			padding-left: 10px;
+			font-family: 'Frijole', cursive;
+			font-size: 30px;
+			color: white;;;
+		}
+		.socialdiv .socialicon{
+			display: none;
+		}
+
+		.socialdiv-footer .socialicon{
+			display: inline;
+			width: 5%;
+			margin-top: -10px;
+		}
+
+		.socialdiv-footer .socialicon:hover{
+			display: inline;
+			width: 5%;
+			margin-top: -10px;
+			opacity: 0.5;
+		}
+		
+		.miltitext>h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer>span{
+	font-size: 10px;
+}
+		
+		.footernav li {
+    display: inline;
+    padding: 2px;
+}
+
+	}
+
+
+		/************************************************************/
+
+.heading a{
+	text-decoration: none;
+	color: white;
+}
+
