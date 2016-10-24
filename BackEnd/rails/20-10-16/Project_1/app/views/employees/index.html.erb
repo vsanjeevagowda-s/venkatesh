@@ -2,5 +2,20 @@
 <p>Inside the Employee controller and index action</p>
 
 
+<% @employee.each do |e| %>
+
+<b><%= e.firstname %></b>|
+<b><%= e.lastname %></b>|
+<b><%= e.employee_code %></b>|
+<%= e.created_at %>
+<%= e.created_at %>
+<hr>
+
+<% end %>
+
+
+<%= link_to "Add Employee", new_employee_path %>
+
+
 
 

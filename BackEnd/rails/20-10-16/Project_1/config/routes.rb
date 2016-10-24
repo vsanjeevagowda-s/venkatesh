@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
    # get 'employees/index'
-   root "employees#index"
+    root "employees#index"
+  get "/employees" => "employees#index", :as => 'list_employees'
 
   get '/add_employee' => 'employees#new', :as => "new_employee"
   post '/add_employee' => 'employees#create', :as => "employee"
