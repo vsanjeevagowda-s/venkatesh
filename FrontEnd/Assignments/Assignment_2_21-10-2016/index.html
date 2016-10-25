@@ -18,14 +18,15 @@
 		<div class="row">
 			<div class="col-md-9">
 				<div class="heading">
-					<a href="#"  class="logo homemenu"><img src="images/formzone.png"></a>
-					<h1><a href="#"  class="logo homemenu">farmZone</a></h1>
+					<a href="index.html"  class="logo homemenu"><img src="images/formzone.png"></a>
+					<h1><a href="index.html"  class="logo homemenu">farmZone</a></h1>
 
 				</div>
 			</div><!--col-9-->
 			<div class="col-md-3 socialdiv">
-				<a href="https://plus.google.com/"><img class="socialicon" src="images/googleplus.png"></a>
-				<a href="https://www.facebook.com/"><img class="socialicon" src="images/facebook.png"></a>
+				<a href="https://plus.google.com/" target="_blank"><img class="socialicon" src="images/googleplus.png"></a>
+				<a href="https://www.twitter.com/" target="_blank"><img class="socialicon" src="images/twitter.png"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img class="socialicon" src="images/facebook.png"></a>
 
 			</div>
 
@@ -49,8 +50,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li class="homemenu" ><a href="#">Home</a></li>
-					<li class="aboutmenu"><a href="#">About</a></li>
+					<li class="homemenu" ><a href="index.html">Home</a></li>
+					<li class="aboutmenu"><a href="about.html">About</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Product<span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -74,7 +75,7 @@
 	<!--Slide Images-->
 	<div id="homepage">
 	<div class="container">
-		<div class="row">
+		<div class="row" id="slideimg">
 			<div class="imgdiv"><img class="slideimage img img-responsive" width="100%" src="images/img1.jpg" alt="slide1"></div>
 			<div class="imgdiv"><img class="slideimage img img-responsive" width="100%" src="images/img2.jpg" alt="slide1"></div>
 			<div class="imgdiv"><img class="slideimage img img-responsive" width="100%" src="images/img3.jpg" altimgdive1"></div>
@@ -88,12 +89,12 @@
 	<!--Pagination-->
 <div id="content">
 	<div class="container">
-		<ul class="pager">
-			<li><a href="#" onclick="prev()">Previous</a></li>
-			<li><a href="#" class="dot activepagination" onclick="currentSlide(0)" >1</a></li>
-			<li><a href="#" class="dot activepagination" onclick="currentSlide(1)" >2</a></li>
-			<li><a href="#" class="dot activepagination" onclick="currentSlide(2)" >3</a></li>
-			<li><a href="#"  onclick="next()">Next</a></li>
+		<ul class="pager" >
+			<li><a href="#slideimg" onclick="prev()">Previous</a></li>
+			<li><a href="#slideimg" class="dot activepagination" onclick="currentSlide(0)" >1</a></li>
+			<li><a href="#slideimg" class="dot activepagination" onclick="currentSlide(1)" >2</a></li>
+			<li><a href="#slideimg" class="dot activepagination" onclick="currentSlide(2)" >3</a></li>
+			<li><a href="#slideimg"  onclick="next()">Next</a></li>
 		</ul>
 	</div>
 
@@ -124,19 +125,25 @@
 				<div class="col-md-12 col-xs-12">
 
 					<div class="col-md-4 col-xs-12 miltitext ">
+					<div class="multilinetext">
 					<h3>Up comming</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nemo distinctio placeat et provident voluptates reprehenderit, consequatur aspernatur sequi hic?</p>
+					</div>
 						<button class="aboutmenu btn-info btn-block">info</button>
 					</div>
 					<div class="col-md-4 col-xs-12 miltitext">
+					<div class="multilinetext">
 					<h3>Used</h3>
 					<p>Reiciendis voluptas ipsum ducimus, a nostrum saepe quaerat eaque repellendus neque id aperiam laboriosam asperiores, molestias deleniti ex sequi quod. molestias deleniti ex sequi quod.</p>
+					</div>
 						<button class="aboutmenu btn-info btn-block">info</button>
 					</div>
 
 					<div class="col-md-4 col-xs-12 miltitext">
+					<div class="multilinetext">
 						<h3>For Rent</h3>
 					<p>Voluptas tenetur labore voluptatem delectus nulla quod, optio adipisci aspernatur ut ad dolore blanditiis, quis ab, illo animi suscipit vero. molestias deleniti ex sequi quod.molestias deleniti ex sequi quod.</p>
+					</div>
 						<button class="aboutmenu btn-info btn-block">info</button>
 					</div>
 				</div>
@@ -188,62 +195,71 @@
 
 				<div class="about-toppage">
 					<a href="#" class="aboutmenu" title="About"><strong>More</strong></a>
-					<a href="#top" title="Go to Top of Page"><span  class="glyphicon glyphicon-chevron-up"></span></a></div>
+					<span  class="glyphicon glyphicon-chevron-up arrow"></span>
+
+				</div>
 
 				</div>
 			</div>
 		</div>
 		</div><!--content ends-->
 		</div><!--homepage ends-->
-		<!--======================Aboutpage==================-->
-	
-
-
-		<div class="container" id="aboutpage">
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10 col-xs-12">
-
-				<h2 class="aboutustag">About Us</h2>
-				
-				<p class="wraptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente error, quasi repudiandae pariatur odio quibusdam nostrum molestias ducimus maxime delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vitae vero at modi recusandae. At mollitia eaque tempora saepe dolores, numquam voluptas fugit, velit obcaecati, eveniet tenetur aliquam modi? Voluptates accusamus possimus quasi rem itaque quos illum, laborum quo dicta tempore eaque sapiente blanditiis debitis provident nam iste nostrum quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vero quis veniam porro ratione voluptates maiores hic sunt ipsam accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto in quas, qui quos officiis, id quis veniam necessitatibus ab accusantium eligendi sequi numquam incidunt illo repellendus, ad repudiandae mollitia aliquid, provident saepe architecto ea! Modi nulla quas dolor corrupti dolore aliquid quaerat amet, non minus culpa magnam officiis maxime, harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				
-				<p class="wraptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente error, quasi repudiandae pariatur odio quibusdam nostrum molestias ducimus maxime delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vitae vero at modi recusandae. At mollitia eaque tempora saepe dolores, numquam voluptas fugit, velit obcaecati, eveniet tenetur aliquam modi? Voluptates accusamus possimus quasi rem itaque quos illum, laborum quo dicta tempore eaque sapiente blanditiis debitis provident nam iste nostrum quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vero quis veniam porro ratione voluptates maiores hic sunt ipsam accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto in quas, qui quos officiis, id quis veniam necessitatibus ab accusantium eligendi sequi numquam incidunt illo repellendus, ad repudiandae mollitia aliquid, provident saepe architecto ea! Modi nulla quas dolor corrupti dolore aliquid quaerat amet, non minus culpa magnam officiis maxime, harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-				<p class="wraptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente error, quasi repudiandae pariatur odio quibusdam nostrum molestias ducimus maxime delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vitae vero at modi recusandae. At mollitia eaque tempora saepe dolores, numquam voluptas fugit, velit obcaecati, eveniet tenetur aliquam modi? Voluptates accusamus possimus quasi rem itaque quos illum, laborum quo dicta tempore eaque sapiente blanditiis debitis provident nam iste nostrum quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vero quis veniam porro ratione voluptates maiores hic sunt ipsam accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto in quas, qui quos officiis, id quis veniam necessitatibus ab accusantium eligendi sequi numquam incidunt illo repellendus, ad repudiandae mollitia aliquid, provident saepe architecto ea! Modi nulla quas dolor corrupti dolore aliquid quaerat amet, non minus culpa magnam officiis maxime, harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-
-			</div>
-
-			<div class="col-md-1"></div>
-		</div>
-	</div>
-
-		<!--======================Aboutpage==================-->
+		
 
 
 		<!--footer-->
-		
-			<div class="footer">
-				<ul class="footernav">
-					<li><a href="#">Home<span class="caret"></span></a></li>
-					<li><a href="#">About<span class="caret"></span></a></li>
-					<li><a href="#">Products<span class="caret"></span></a></li>
-					<li><a href="#">Blog<span class="caret"></span></a></li>
-					<li><a href="#">Contact<span class="caret"></span></a></li>
-				</ul>
-				
+
+		<div class="container-fluid footer">
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					
+					<ul class="footernav">
+						<li><a href="#">Home<span class="caret"></span></a></li>
+						<li><a href="about.html">About<span class="caret"></span></a></li>
+						<li><a href="#">Products<span class="caret"></span></a></li>
+						<li><a href="#">Blog<span class="caret"></span></a></li>
+						<li><a href="#">Contact<span class="caret"></span></a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4 col-xs-12">
+
+					<div class="address"><address>
+						#77/1, farmZone, Chals Street<br>
+						Roopan Nagar,<br>
+						Bangalore<br>
+						Karnataka
+					</address>
+				</div>
+
+				<div class="socialdiv-footer">
+					<a href="https://plus.google.com/"><img class="socialicon" src="images/googleplus.png"></a>
+					<a href="https://www.facebook.com/"><img class="socialicon" src="images/facebook.png"></a>
+				</div>
+			</div>
 
 			
-			<div class="socialdiv-footer">
-				<a href="https://plus.google.com/"><img class="socialicon" src="images/googleplus.png"></a>
-				<a href="https://www.facebook.com/"><img class="socialicon" src="images/facebook.png"></a>
+			<div class="col-md-4 col-xs-12">
+				<a href="index.html"  class="logo homemenu">
+				<img class="fotlogo" src="images/formzone.png">
+				</a>
+				<p class="copyrite">&copy; 2016 <i>FarmZone</i> All Rights reserved</p>
+			</div>
+		</div><!--row-->
+	</div><!--container-fluid-->
+
+			
+			<!-- <div class="socialdiv-footer">
+				<a href="https://plus.google.com/" target="_blank"><img class="socialicon" src="images/googleplus.png"></a>
+				<a href="https://www.twitter.com/" target="_blank"><img class="socialicon" src="images/twitter.png"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img class="socialicon" src="images/facebook.png"></a>
 
 			</div>
-
-			<span>&copy; 2016 <i>FarmZone</i> All Rights reserved</span>
+ -->
+			
 			</div>
+			</div>
+		
 		
 
 
