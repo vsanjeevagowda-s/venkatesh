@@ -320,6 +320,8 @@ body{
 }
 p.copyrite {
 	font-size: 10px;
+	    font-family: sans-serif;
+    word-spacing: 4px;
 }
 
 .multilinetext {
@@ -344,6 +346,9 @@ p.copyrite {
 
 }
 
+.navbar-brand{
+	display: none;
+}
 
 
 
@@ -404,6 +409,16 @@ p.copyrite {
 /**************************Mediaquery for mobile***********************************/
 @media only screen and (max-width: 680px) { 
 
+.navbar-brand{
+	
+	display: block;
+	font-weight: bolder;
+	
+
+}
+
+
+
 	.socialdiv{
 		display: none;
 	}
@@ -422,9 +437,9 @@ p.copyrite {
 
 	}
 	.socialdiv-footer .socialicon:hover{
-		display: inline;
-		margin-top: 30px;
-		width: 8%;
+		/*display: inline;*/
+		/*margin-top: 4px;*/
+		/*width: 8%;*/
 		opacity: 0.7;
 	}
 
