@@ -121,15 +121,7 @@ function next(){
 
 /********************Home and About page navigation****************************************/
 
-$('.homemenu').click(function(){
-	$('#aboutpage').hide();
-	$('#homepage').show();
-});
 
-$('.aboutmenu').click(function(){
-	$('#aboutpage').show();
-	$('#homepage').hide();
-});
 
 $(".arrow").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
