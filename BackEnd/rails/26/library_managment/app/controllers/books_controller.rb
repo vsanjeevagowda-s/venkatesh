@@ -1,8 +1,8 @@
 class BooksController < ApplicationController
    def edit
-   	binding.pry
+   	# binding.pry
   	@book=Book.find_by_id(params[:id])
-  	binding.pry
+  	# binding.pry
   end
 
   def new
@@ -10,7 +10,7 @@ class BooksController < ApplicationController
   end
 
   def index
-  	binding.pry
+  	# binding.pry
   	@books=Book.all
   
   end
@@ -25,8 +25,30 @@ class BooksController < ApplicationController
 
   end
 
+
+  def update
+    # binding.pry
+      @book=Book.find_by_id(params[:id])
+    @book.update_attributes(book_params)
+    redirect_to books_list_path
+  end
+
+
+  def destroy
+    binding.pry
+    @book=Book.find_by_id(params[:id])
+    @book.destroy
+    redirect_to books_list_path
+  end
+
+  def show
+    # binding.pry
+    @book=Book.find_by_id(params[:id])
+  end
+
   private
   def book_params
+    # binding.pry
   		params.require(:book).permit(:book_name,:author,:publication)
   	
   end
