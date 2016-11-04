@@ -1,0 +1,18 @@
+<h1>List of Comapnies </h1>
+
+<table border="1">
+	<tr>
+		
+		<th>Name</th>
+		<th>Location</th>
+	</tr>
+	<% @companies.each do |c| %>
+	<tr>
+
+		<td><%= c.name %></td>
+		<td><%= c.location %></td>
+		<td><%= link_to "List_employees",  company_employees_path(c) %></td>
+		<td><%= link_to "Create_employee", new_company_employee_path(c) %></td>
+	</tr>
+	<% end %>
+</table>

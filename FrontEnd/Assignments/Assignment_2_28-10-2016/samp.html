@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="style/style.css"> -->
+		<!-- <link rel="stylesheet" href="style/style_media_1025.css"> -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Port+Lligat+Sans" rel="stylesheet">
+<style type="text/css">
+
+	@keyframes slidy {
+/*0% { left: 0%; }*/
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+div#captioned-gallery { 
+ width: 160px;
+
+  /*overflow: hidden; */
+}
+figure.slider { 
+	
+ position: relative;
+  width: 900px;
+  height: 800px;
+ font-size: 0;
+  animation: 10s slidy infinite; 
+}
+figure.slider figure { 
+ width: 162px;
+  height: auto;
+ display: inline-block;
+   position: inherit; 
+}
+figure.slider img { 
+	width: 100%; 
+	height: auto;
+}
+figure.slider figure figcaption { 
+ position: absolute;
+  bottom: 0;
+ background: rgba(0,0,0,0.4);
+ color: #fff;
+  width: 100%;
+ font-size: 2rem;
+ padding: .6rem; 
+}
+
+
+img{
+		width: 300px;
+    height: 300px;
+	}
+
+  .button{
+    position: absolute;
+    top: 300px;
+  }
+
+
+
+
+  /*********************************************************************/
+  .b1:focus{
+    @keyframes slidy {
+/*0% { left: 0%; }*/
+20% { right: 0%; }
+25% { right: -100%; }
+45% { right: -100%; }
+50% { right: -200%; }
+70% { right: -200%; }
+75% { right: -300%; }
+95% { right: -300%; }
+100% { right: -400%; }
+}
+
+div#captioned-gallery { 
+ width: 160px;
+
+  /*overflow: hidden; */
+}
+figure.slider { 
+  
+ position: relative;
+  width: 900px;
+  height: 800px;
+ font-size: 0;
+  animation: 10s slidy infinite; 
+}
+  }
+
+  /****************************************************************/
+</style>
+</head>
+<body>
+	<!--//////////////////////////////////////////////body\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+<!-- slider images -->
+     <div id="captioned-gallery">
+       <div class="images">
+         <figure class="slider">
+           <figure>
+             <img src="images/HondaTiller.jpg">
+             <figcaption>Gokarna,Om-shaped beach</figcaption>
+           </figure>
+           <figure>
+             <img src="images/seedplanter.jpg">
+             <figcaption>Mysore,the dream destination</figcaption>
+           </figure>
+           <figure>
+             <img  src="images/img1.jpg">
+             <figcaption>Jog falls in late mansoon</figcaption>
+           </figure>
+           <figure>
+             <img src="images/HondaTiller.jpg">
+             <figcaption>Ancient water pool and temple at Krishna market, Hampi</figcaption>
+           </figure>
+           <figure>
+             <img src="images/kopalka_kartofelya_dlya_motobloka_04.jpg">
+             <figcaption>Gokarna,Om-shaped beach</figcaption>
+           </figure>
+         </figure>
+       </div>
+     </div>
+     <br>
+<hr>
+<div class="button">
+     <button type="button" class="b1">1</button>
+     <button type="button" class="b2">1</button>
+     <button type="button" class="b3">1</button>
+     <button type="button" class="b4">1</button>
+     <button type="button" class="b5">1</button>
+</div>
+
+	<!--//////////////////////////////////////////////body\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
+
+		<script type="text/javascript" src="jquery/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript">
+      
+    </script>
+
+
+	</body>
+	</html>

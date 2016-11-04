@@ -1,0 +1,70 @@
+
+
+@media only screen and (min-width: 770px) and (max-width: 1025px) {
+	/*//////////////////////////////////slide imgae/////////////////////////////////////////*/
+	.carous {
+		width: 720px;
+		overflow:hidden;
+		margin: auto;
+		box-shadow: 5px 5px 5px grey;
+	}
+
+	.carous ul {
+		width: 2880px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.carous ul li {
+		width:720px;
+		text-align: center;
+		height: 380px;
+		list-style: none;
+		float:	left;
+	}
+
+	.buton{
+		width: 300px;
+		position: relative;
+		top: 5px;
+	}
+
+/*////////////////////////////////slide text////////////////////////////////////*/
+
+.carous-text {
+		width: 720px;
+		overflow:hidden;
+		margin-left: 158px;
+		margin-top: -320px;
+		z-index: 10;
+
+
+	}
+
+	.carous-text ul {
+		width: 2880px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.carous-text ul li {
+		width:720px;
+		text-align: center;
+		height: 280px;
+		list-style: none;
+		float:	left;
+		z-index: -1;
+	}
+	.carous-text ul li h1{
+		font-size: 20px;
+		font-weight: bolder;
+		text-shadow: 3px 3px 3px white;
+	} 
+	.carous-text ul li p{
+		font-size: 15px;
+	} 
+
+/*////////////////////////////////slide text ends//////////////////////////////////////*/
+
+}
+
