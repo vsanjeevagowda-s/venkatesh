@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+body{
+	background-color: red;
+}
+.pub{
+	color:green;
+}
+
+.img1{
+	width: 20%;
+}

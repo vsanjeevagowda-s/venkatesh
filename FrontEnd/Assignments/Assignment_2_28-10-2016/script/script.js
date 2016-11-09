@@ -4,7 +4,7 @@ slid();
 	function slid(){
 
 		$(".carous ul").each(function(){
-			$("#1").css("color","red");
+			$("#1").css("color","black");
 			// Set the interval to be 10 seconds
 			 setInterval(function(){
 				$(".carous ul").animate({marginLeft:-960},1000,function(){
@@ -18,7 +18,7 @@ slid();
 
 					
 		if($(".carous ul").find("li:first").attr('class') == "img1"){
-			$("#1").css("color","red");
+			$("#1").css("color","black");
 			$("#2").css("color","white");
 			$("#3").css("color","white");
 			$("#4").css("color","white");
@@ -27,21 +27,21 @@ slid();
 		}
 
 		else if($(".carous ul").find("li:first").attr('class') == "img2"){
-			$("#2").css("color","red");	
+			$("#2").css("color","black");	
 			$("#1").css("color","white");	
 			$("#3").css("color","white");	
 			$("#4").css("color","white");	
 		}
 
 		else if($(".carous ul").find("li:first").attr('class') == "img3"){
-			$("#3").css("color","red");	
+			$("#3").css("color","black");	
 			$("#1").css("color","white");	
 			$("#2").css("color","white");	
 			$("#4").css("color","white");	
 		}
 
 		else if($(".carous ul").find("li:first").attr('class') == "img4"){
-			$("#4").css("color","red");	
+			$("#4").css("color","black");	
 			$("#1").css("color","white");	
 			$("#2").css("color","white");	
 			$("#3").css("color","white");	
@@ -69,7 +69,7 @@ slid();
 				$(".carous ul").find("li:first").before($(".carous ul").find(".img4"));
 				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img4-text"));
 				$(".carous ul").find("li:first").after($(".carous ul").find(".img1"));
-				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img1-text"));
+				$(".carous-text ul").find("li:first").after($(".carous-text ul").find(".img1-text"));
 				$(".carous ul").find("li:last").after($(".carous ul").find(".img3"));
 				$(".carous-text ul").find("li:last").after($(".carous-text ul").find(".img3-text"));
 				}
@@ -79,7 +79,7 @@ slid();
 				$(".carous ul").find("li:first").before($(".carous ul").find(".img3"));
 				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img3-text"));
 				$(".carous ul").find("li:first").after($(".carous ul").find(".img4"));
-				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img4-text"));
+				$(".carous-text ul").find("li:first").after($(".carous-text ul").find(".img4-text"));
 				$(".carous ul").find("li:last").after($(".carous ul").find(".img2"));
 				$(".carous-text ul").find("li:last").after($(".carous-text ul").find(".img2-text"));
 				}
@@ -89,7 +89,7 @@ slid();
 				$(".carous ul").find("li:first").before($(".carous ul").find(".img2"));
 				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img2-text"));
 				$(".carous ul").find("li:first").after($(".carous ul").find(".img3"));
-				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img3-text"));
+				$(".carous-text ul").find("li:first").after($(".carous-text ul").find(".img3-text"));
 				$(".carous ul").find("li:last").after($(".carous ul").find(".img1"));
 				$(".carous-text ul").find("li:last").after($(".carous-text ul").find(".img1-text"));
 				}
@@ -98,7 +98,7 @@ slid();
 				$(".carous ul").find("li:first").before($(".carous ul").find(".img1"));
 				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img1-text"));
 				$(".carous ul").find("li:first").after($(".carous ul").find(".img2"));
-				$(".carous-text ul").find("li:first").before($(".carous-text ul").find(".img2-text"));
+				$(".carous-text ul").find("li:first").after($(".carous-text ul").find(".img2-text"));
 				$(".carous ul").find("li:last").after($(".carous ul").find(".img4"));
 				$(".carous-text ul").find("li:last").after($(".carous-text ul").find(".img4-text"));
 				}
@@ -108,7 +108,7 @@ slid();
 				
 		
 if($(".carous ul").find("li:first").attr('class') == "img1"){
-			$("#1").css("color","red");
+			$("#1").css("color","black");
 			$("#2").css("color","white");
 			$("#3").css("color","white");
 			$("#4").css("color","white");
@@ -117,21 +117,21 @@ if($(".carous ul").find("li:first").attr('class') == "img1"){
 		}
 
 		else if($(".carous ul").find("li:first").attr('class') == "img2"){
-			$("#2").css("color","red");	
+			$("#2").css("color","black");	
 			$("#1").css("color","white");	
 			$("#3").css("color","white");	
 			$("#4").css("color","white");	
 		}
 
 		else if($(".carous ul").find("li:first").attr('class') == "img3"){
-			$("#3").css("color","red");	
+			$("#3").css("color","black");	
 			$("#1").css("color","white");	
 			$("#2").css("color","white");	
 			$("#4").css("color","white");	
 		}
 
 		else if($(".carous ul").find("li:first").attr('class') == "img4"){
-			$("#4").css("color","red");	
+			$("#4").css("color","black");	
 			$("#1").css("color","white");	
 			$("#2").css("color","white");	
 			$("#3").css("color","white");	
@@ -181,7 +181,7 @@ slidtext();
 	function slidtext(){
 
 		$(".carous-text ul").each(function(){
-			$("#1").css("color","red");
+			$("#1").css("color","black");
 			// Set the interval to be 10 seconds
 			 setInterval(function(){
 				$(".carous-text ul").animate({marginLeft:-960},1000,function(){

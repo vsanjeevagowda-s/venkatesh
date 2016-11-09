@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_for :task, url: task_completed_path  do |f| %>
+<h1>incomplete Tasks</h1>
+<% @incomplete_tasks.each do |t| %>
+  <%= check_box_tag "task_ids[]", t.id  %>
+  <%=  t.name %><br>
+<% end %>
+<%= f.submit %>
+<% end %>
+
+
+
+
+<%= form_for :task, url: task_completed_path  do |f| %>
+<h1>complete Tasks</h1>
+<% @complete_tasks.each do |t| %>
+  <%= check_box_tag "task_ids[]", t.id  %>
+  <%=  t.name %><br>
+<% end %>
+<%= f.submit %>
+<% end %>
+
+<br>
+
+<%= link_to 'New Task', new_task_path %>
