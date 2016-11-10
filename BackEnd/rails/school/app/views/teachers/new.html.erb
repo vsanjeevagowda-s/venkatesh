@@ -1,0 +1,19 @@
+<h1>Add teacher</h1>
+
+<%= form_for :teacher, url: teacher_create_path do |f| %>
+	<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+	</p>
+
+	<%= f.fields_for :subject do |s| %>
+	<p>
+		<%= s.label :subject_name %><br>
+		<%= s.text_field :subject_name %><br>
+	</p>
+	<% end %>
+
+	<p>
+		<%= f.submit  %>
+	</p>
+<% end %>

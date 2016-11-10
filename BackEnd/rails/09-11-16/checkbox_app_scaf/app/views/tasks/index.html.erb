@@ -6,7 +6,7 @@
   <%= check_box_tag "task_ids[]", t.id  %>
   <%=  t.name %><br>
 <% end %>
-<%= f.submit %>
+<%= f.submit 'completed' %>
 <% end %>
 
 
@@ -18,7 +18,7 @@
   <%= check_box_tag "task_ids[]", t.id  %>
   <%=  t.name %><br>
 <% end %>
-<%= f.submit %>
+<%= f.submit 'not completed' %>
 <% end %>
 
 <br>

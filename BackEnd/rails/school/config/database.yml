@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  port: 5432
+  pool: 5
+  username: postgres
+  password: password
+  database: school
+  host: localhost

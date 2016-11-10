@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :tasks
 
   post "task/update" => "tasks#task_completed", as: :task_completed
+
+   # post "task/update" => "tasks#task_not_completed", as: :task_not_completed
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

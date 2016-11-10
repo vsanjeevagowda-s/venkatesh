@@ -5,8 +5,8 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     # binding.pry
-    @incomplete_tasks = Task.where(:completed==0)
-    @complete_tasks = Task.where(:completed==1)
+    @incomplete_tasks = Task.where(completed:nil)
+    @complete_tasks = Task.where(completed: 1)
   end
 
   # GET /tasks/1
@@ -26,7 +26,7 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    binding.pry
+    # binding.pry
     @task = Task.new(task_params)
 
     respond_to do |format|
@@ -65,11 +65,25 @@ class TasksController < ApplicationController
   end
 
   def task_completed
-    binding.pry
-    # @t=Task.where(params["task_ids"])
-    Task.where(params["task_ids"]).update_all(completed: 1)
+    # binding.pry
+if(params["task_ids"] != nil)
+if(params["commit"]=="completed"   )
+
+          params["task_ids"].map {|i| i.to_i}.each do |i|
+              Task.find(i).update(completed: 1)
+        end
+
+
+else
+         params["task_ids"].map {|i| i.to_i}.each do |i|
+                Task.find(i).update(completed:"")
+          end
+end
+end
     redirect_to tasks_path
   end
+
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.

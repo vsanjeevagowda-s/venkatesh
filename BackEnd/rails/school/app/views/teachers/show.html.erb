@@ -1,0 +1,15 @@
+<h1>Teacher Details</h1>
+<p>
+<strong>Name :</strong>
+	<%= @teacher.name %>
+</p>
+
+
+<h1>Subjects handling</h1>
+<% @teacher.subjects.each do |s| %>
+<strong>Subject Name :</strong>
+	<%= s.id %>
+	<%= s.subject_name %><br>
+	<%= link_to 'Add student', list_students_path(s) %>
+<% end %>
+
