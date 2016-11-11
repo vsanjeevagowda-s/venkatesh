@@ -3,7 +3,7 @@ class TeachersController < ApplicationController
 
 
 	def new
-		
+
 	end
 
 	def index
@@ -13,13 +13,13 @@ class TeachersController < ApplicationController
 
 	def show
 		# binding.pry
-		@teacher=Teacher.find_by_id(params[:id])
+		@teacher=Teacher.find_by_id(params[:teacher_id])
 	end
 
 
 
 	def create
-		# binding.pry
+		binding.pry
 		@teacher=Teacher.new
 		@teacher.name=(teacher_params[:name])
 		@teacher.save
@@ -29,7 +29,7 @@ class TeachersController < ApplicationController
 
 	private
 	def teacher_params
-		@a=params.require(:teacher).permit(:name, subject: [:subject_name])
+		@a=params.require(:teacher).permit(:name, subjects: [:subject_name])
 
 	end
 

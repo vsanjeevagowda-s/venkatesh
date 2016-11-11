@@ -1,0 +1,12 @@
+
+
+<%= form_for :students, url: add_student_path  do |f| %>
+<h1 >List of all students</h1>
+<% @students.each do |t| %>
+  <%= check_box_tag "student_ids[]", t.id  %>
+  <%=  t.name %><br>
+<% end %>
+<%= f.submit 'add students' %>
+<% end %>
+<%= link_to 'Add more students', student_new_path %>
+

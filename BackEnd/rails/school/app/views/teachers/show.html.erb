@@ -9,7 +9,16 @@
 <% @teacher.subjects.each do |s| %>
 <strong>Subject Name :</strong>
 	<%= s.id %>
-	<%= s.subject_name %><br>
-	<%= link_to 'Add student', list_students_path(s) %>
+	<%=  s.subject_name %><br>
+	<%= link_to 'Add student', list_students_path(@teacher,s) %>
 <% end %>
 
+<h1>Students List</h1>
+<% @teacher.subjects.each do |subject| %>
+
+	<% subject.students.each do |student| %>
+<strong>Student Name :</strong>
+	<%=  student.name %><br>
+	
+<% end %>
+<% end %>

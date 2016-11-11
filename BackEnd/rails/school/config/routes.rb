@@ -10,21 +10,35 @@ Rails.application.routes.draw do
 #   end
 # end
 
-root  'teachers#new', as: :teacher_new
+root  'teachers#new'
 
 post '/teachers' => 'teachers#create', as: :teacher_create
+post '/api/v1/teachers' => 'api/v1/teachers#create'
 
 get '/teachers' => 'teachers#index', as: :list_teachers
+get '/api/v1/teachers' => 'api/v1/teachers#index'
 
-get '/teachers/:id' => "teachers#show", as: :teacher_show
+get '/teachers/:teacher_id' => "teachers#show", as: :teacher_show
+get '/api/v1/teachers/:teacher_id' => "api/v1/teachers#show"
 
 
-get '/subjects/:subject_id/students' => 'students#index', as: :list_students
+get '/teachers/:teacher_id/subjects/:subject_id/students' => 'students#index', as: :list_students
+get '/api/v1/teachers/:teacher_id/subjects/:subject_id/students' => 'api/v1/students#index'
+
+post '/teachers/:teacher_id/subjects/:subject_id/students' => 'students#add_student', as: :add_student
+post '/api/v1/teachers/:teacher_id/subjects/:subject_id/students' => 'api/v1/students#add_student'
+
+
+get '/teachers/:teacher_id/subjects/:subject_id/students/new' => 'students#new', as: :student_new
+get '/api/v1/teachers/:teacher_id/subjects/:subject_id/students/new' => 'api/v1/students#new'
+
+post '/teachers/:teacher_id/subjects/:subject_id/students/create' => 'students#create', as: :create_student 
+post '/api/v1/teachers/:teacher_id/subjects/:subject_id/students/create' => 'api/v1/students#create'
 
 
 # Prefix Verb   URI Pattern                                                            Controller#Action
     # teacher_subject_students GET    /teachers/:teacher_id/subjects/:subject_id/students(.:format)          students#index
-#                              POST   /teachers/:teacher_id/subjects/:subject_id/students(.:format)          students#create
+                             # POST   /teachers/:teacher_id/subjects/:subject_id/students(.:format)          students#create
 #  new_teacher_subject_student GET    /teachers/:teacher_id/subjects/:subject_id/students/new(.:format)      students#new
 # edit_teacher_subject_student GET    /teachers/:teacher_id/subjects/:subject_id/students/:id/edit(.:format) students#edit
 #      teacher_subject_student GET    /teachers/:teacher_id/subjects/:subject_id/students/:id(.:format)      students#show
