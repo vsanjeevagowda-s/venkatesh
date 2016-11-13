@@ -29,3 +29,31 @@ margin-left: 70%;
 	
 	
 }
+
+.red-back{
+	background-color: red;
+
+}
+
+.white-color{
+	color: white;
+}
+
+.green-back{
+	background-color: green;
+
+}
+
+.status span{
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.status{
+	text-align: right;
+}
+
+.f-pad{
+	padding: 5px 0px;
+}
+

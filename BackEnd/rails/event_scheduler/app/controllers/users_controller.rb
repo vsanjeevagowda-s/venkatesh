@@ -9,8 +9,14 @@ class UsersController < ApplicationController
 
 	def create
 		@user=User.new(user_params)
-		@user.save
-		redirect_to login_path
+		if @user.save
+			flash[:success]="User created successfully"
+			redirect_to login_path
+		else
+			flash[:danger]="Failed to create the user try again"
+			redirect_to :back
+		end
+		
 	end
 
 	private

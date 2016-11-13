@@ -16,11 +16,11 @@
 
   <p>
     <%= f.label :date %><br>
-    <%= f.text_field :date, "class" => "form-control" %>
+    <%= f.date_field :date, "class" => "form-control" %>
   </p>
   <p>
     <%= f.label :time %><br>
-    <%= f.text_field :time, "class" => "form-control" %>
+    <%= f.time_field :time, "class" => "form-control" %>
   </p>
   <p>
     <%= f.label :desc %><br>
@@ -29,10 +29,14 @@
 
 
 <%= f.fields_for :partcipent  do |f| %>
-<h1>List of participents</h1>
+<h1>Add participents</h1>
 <% @users.each do |t| %>
+  <%if !(t.id==current_user.id)%>
   <%= check_box_tag "user_ids[]", t.id  %>
   <%=  t.firstname %>&nbsp; <%=  t.lastname %><br>
+
+  <%end%>
+  
 <% end %>
 
 <% end %>
@@ -41,7 +45,7 @@
 
 
 
-  <p>
+  <p><br>
     <%= f.submit 'add participent' %>
   </p>
 <% end %>

@@ -3,33 +3,157 @@
 <div class="container">
 <div class="row">
 <div class="col-md-6">
-<div class="well">
-		<h1>List of Events</h1>
+<div >
+		
 	<% @events.each do |e| %>
+<div class="well">
 	<strong>Event : </strong><%= e.title %><br>
 	<strong>Organiser : </strong>	<%= User.find(e.owner_id).firstname%>&nbsp;<%= User.find(e.owner_id).lastname%><br>
+  
+  <a href="#" data-toggle="modal" data-target="#myModal-<%= e.id%>">Participents</a><br><br>
+
+ <div class="status">
+  <% if e.status==nil %>
+  <div>
+    <span class="green-back white-color">open</span> 
+  </div> 
+
+  <%else %>
+   <div>
+    <span class="red-back white-color">open</span> 
+  </div>   
+<% end %>
+  </div>
+<!-- /////////////////////////////////////////////////////////// -->
+	
+<div class="container">
  
- <%= link_to "Participents", list_participents_path(current_user,e), "data-toggle" => "modal", "data-target"=>"#myModal" %>	
-	<br><br>
-			<% end %>
+  <!-- Trigger the modal with a button -->
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal-<%= e.id%>" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Event : <%= e.title  %> </h4>
+        </div>
+        <div class="modal-body">
+       
+          <table class="table">
+          <tr>  <th>List of Participents</th></tr>
+          	<% e.users.each do |u| %>
+    
+          	<tr>
+           
+          		<td><%= u.firstname%>&nbsp;<%= u.lastname%></td>
+          	</tr>
+			       <% end %>
+
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+</div>
+			<% end %><!-- end of loop -->
 </div>
 </div>
 
 
 <div class="col-md-6">
-<div class="well">
+
 	
 		<% @events.each do |e| %>
-		<strong>Event Name : </strong><%= e.title %><br>
-		<strong>Venu : </strong><%= e.venue %><br>
-		<strong>Date : </strong><%= e.date %><br>
-		<strong>Time : </strong><%= e.time %><br>
-		<strong>Desc : </strong><%= e.desc %><br>
-		<strong>Invitee : </strong><%= e.invitee %><br>
+    <div class="well">
+    
+<div class="form-group">
+  
+<div class="row">
+  <div class="col-md-3">
+		<strong>Event Name : </strong>
+</div>
+ <div class="col-md-9">
+
+    <p class="well well-sm" ><%= e.title %></p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <strong>Venu : </strong>
+</div>
+ <div class="col-md-9">
+
+    <p class="well well-sm" ><%= e.title %></p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <strong>Date : </strong>
+</div>
+ <div class="col-md-9">
+
+    <p class="well well-sm" ><%= e.title %></p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <strong>Time : </strong>
+</div>
+ <div class="col-md-9">
+
+    <p class="well well-sm" ><%= e.title %></p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <strong>Description : </strong>
+</div>
+ <div class="col-md-9">
+
+    <p class="well well-sm" ><%= e.title %></p>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <strong>Status : </strong>
+</div>
+ <div class="col-md-9">
+  <select >
+      <option value="1">open</option>  
+      <option value="0">close</option>  
+    </select><br><br>
+    
+</div>
+</div>
+       
+
+
+  
+
+  </div>
+		</div >
 		
 			<% end %>
 </div>
-</div>
+
 </div><!-- row -->
 </div><!-- container -->
 
