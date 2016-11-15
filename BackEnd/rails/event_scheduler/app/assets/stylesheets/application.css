@@ -12,7 +12,8 @@
  *
  *= require_tree .
  *= require_self
-  *= require_bootstrap
+ *= require_bootstrap
+ *= require_jquery-ui
  */
 
 
@@ -22,13 +23,7 @@ margin-left: 70%;
 
 }
 
-.loggeduser{
-	
- 
-	float: right;
-	
-	
-}
+
 
 .red-back{
 	background-color: red;
@@ -56,4 +51,48 @@ margin-left: 70%;
 .f-pad{
 	padding: 5px 0px;
 }
+/**************************navbar links*****************************/
+.logout, .login, .home, .signup {
+	background-color: #5CB85C;
+	margin: 10px 10px; 
+	border-radius: 5px;
+color: white;
+font-size: 15px;
+font-weight: bolder;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+.navbar-nav > li > a {
+	    padding-top: 10px;
+     padding-bottom: 10px; 
+}
 
+.login{
+	margin-right: 80px;
+}
+
+/************************************************************/
+.navbar-brand{
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+.jumbotron{
+	margin:auto 300px;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	
+	height: 292px;
+
+}
+
+.jumbotron h2{
+	font-weight: bolder;
+}
+
+.ju-text{
+	margin-top: 15%;	
+	vertical-align: sub;
+}

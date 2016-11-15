@@ -3,7 +3,7 @@
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
 <h1>Create Event</h1>
-<%= form_for :user, url: create_event_path do |f| %>
+<%= form_for :event, url: create_event_path do |f| %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title, "class" => "form-control" %>
@@ -16,11 +16,11 @@
 
   <p>
     <%= f.label :date %><br>
-    <%= f.date_field :date, "class" => "form-control" %>
+    <%= f.date_field :date, "class" => "form-control", "id" => "datepicker" %>
   </p>
   <p>
     <%= f.label :time %><br>
-    <%= f.time_field :time, "class" => "form-control" %>
+    <%= f.time_field :time, "class" => "form-control", "id" => "timepicker" %>
   </p>
   <p>
     <%= f.label :desc %><br>
@@ -35,7 +35,7 @@
   <%= check_box_tag "user_ids[]", t.id  %>
   <%=  t.firstname %>&nbsp; <%=  t.lastname %><br>
 
-  <%end%>
+  <% end %>
   
 <% end %>
 

@@ -1,4 +1,4 @@
-<%= link_to 'Add event', new_event_path, "class" => "addevent btn btn-primary"  %>
+<%= link_to 'create new event', new_event_path, "class" => "addevent btn btn-primary"  %>
 
 <div class="container">
 <div class="row">
@@ -7,23 +7,24 @@
 		
 	<% @events.each do |e| %>
 <div class="well">
-	<strong>Event : </strong><%= e.title %><br>
+	<strong>Event : </strong><%= link_to e.title, edit_event_path(current_user,e) %><br>
 	<strong>Organiser : </strong>	<%= User.find(e.owner_id).firstname%>&nbsp;<%= User.find(e.owner_id).lastname%><br>
   
   <a href="#" data-toggle="modal" data-target="#myModal-<%= e.id%>">Participents</a><br><br>
 
  <div class="status">
-  <% if e.status==nil %>
+  <% if e.status== nil %>
   <div>
     <span class="green-back white-color">open</span> 
   </div> 
 
-  <%else %>
+  <%elsif e.status== false %>
    <div>
-    <span class="red-back white-color">open</span> 
+    <span class="red-back white-color">close</span> 
   </div>   
 <% end %>
   </div>
+  <%= link_to 'Delete event', delete_event_path(current_user, e), method: :delete, "class" => "btn btn-primary"  %>
 <!-- /////////////////////////////////////////////////////////// -->
 	
 <div class="container">
@@ -97,7 +98,7 @@
 </div>
  <div class="col-md-9">
 
-    <p class="well well-sm" ><%= e.title %></p>
+    <p class="well well-sm" ><%= e.venue %></p>
 </div>
 </div>
 
@@ -107,7 +108,7 @@
 </div>
  <div class="col-md-9">
 
-    <p class="well well-sm" ><%= e.title %></p>
+    <p class="well well-sm" ><%= e.date %></p>
 </div>
 </div>
 
@@ -117,7 +118,7 @@
 </div>
  <div class="col-md-9">
 
-    <p class="well well-sm" ><%= e.title %></p>
+    <p class="well well-sm" ><%= e.time %></p>
 </div>
 </div>
 
@@ -127,22 +128,11 @@
 </div>
  <div class="col-md-9">
 
-    <p class="well well-sm" ><%= e.title %></p>
+    <p class="well well-sm" ><%= e.desc %></p>
 </div>
 </div>
 
-<div class="row">
-  <div class="col-md-3">
-    <strong>Status : </strong>
-</div>
- <div class="col-md-9">
-  <select >
-      <option value="1">open</option>  
-      <option value="0">close</option>  
-    </select><br><br>
-    
-</div>
-</div>
+
        
 
 

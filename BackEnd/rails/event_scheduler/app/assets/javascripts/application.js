@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery-ui
 //= require_tree .
+
+
+ $("document").ready(function(){
+
+    $( "#datepicker" ).datepicker();
+    $("#timepicker").timepicker();
+ })

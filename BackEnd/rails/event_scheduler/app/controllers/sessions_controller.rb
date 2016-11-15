@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   	user = User.find_by(email: params[:email] )
   	if user && user.authenticate(params[:password])
       session[:user_id]=user.id
-      flash[:success]="welcome"
+      flash[:success]="welcome #{current_user.firstname} #{current_user.lastname}  "
       redirect_to list_events_path(current_user)
   	else
       flash[:danger]="email or password is incorrect"
@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
   def destroy
      session[:user_id]=nil
-     flash[:success]="good by"
+     flash[:success]="Logged out! "
      redirect_to root_path
   end
 end

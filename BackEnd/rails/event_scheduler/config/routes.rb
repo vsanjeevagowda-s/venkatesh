@@ -29,8 +29,11 @@ get "/users/:user_id/events/new" => "events#new", as: :new_event
 
 post "/users/:user_id/events" => "events#create", as: :create_event
 
+get "/users/:user_id/events/:event_id/edit" => "events#edit", as: :edit_event
 
+patch "/users/:user_id/events/:event_id" => "events#update", as: :update_event
 
+delete "/users/:user_id/events/:id" => "events#destroy" , as: :delete_event
 # resources :sessions
 
 
@@ -40,9 +43,9 @@ post "/users/:user_id/events" => "events#create", as: :create_event
  # new_user_event GET    /users/:user_id/events/new(.:format)      events#new
 # edit_user_event GET    /users/:user_id/events/:id/edit(.:format) events#edit
 #      user_event GET    /users/:user_id/events/:id(.:format)      events#show
-#                 PATCH  /users/:user_id/events/:id(.:format)      events#update
+                # PATCH  /users/:user_id/events/:id(.:format)      events#update
 #                 PUT    /users/:user_id/events/:id(.:format)      events#update
-#                 DELETE /users/:user_id/events/:id(.:format)      events#destroy
+                # DELETE /users/:user_id/events/:id(.:format)      events#destroy
 #           users GET    /users(.:format)                          users#index
 #                 POST   /users(.:format)                          users#create
        # new_user GET    /users/new(.:format)                      users#new
